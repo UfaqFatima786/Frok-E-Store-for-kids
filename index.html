@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bag-Store</title>
+    <link rel="icon" href="/images/girl-frok.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bagnavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/images/frok.webp" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active link" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex form" role="search">
+                    <select onchange="productChange()" name="products" id="productMenu">
+                        <option value="">Select Main Category </option>
+                    </select>&nbsp;&nbsp;
+
+                    <select onchange="filterProduct()" name="category" id="categoryMenu">
+                        <option value="">Select Sub Category </option>
+                    </select>
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000"
+        data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.openai.com/static-rsc-4/XBhGh_uIdCjlmDuifyDjkua_uVju4QP_f-80aDCXvzPUYSBvV_rN2cDi-vUOcR8Me-bK91HihxjDL5bmb_Wgr8WbPjzG3fEZ7lxIfo9qDBnR9U7f-tDs0ejkX5Pwp59oao1BpSWFgS2KVvPKJUbIa0kR3j1G24M6eVGHG50jLg6gd9b5ZDUxlKPgI--ZPitO?purpose=fullsize"
+                    class="d-block w-100 frock" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.istockphoto.com/photo/chinese-baby-girl-with-traditional-dressing-up-celebrate-chinese-new-year-gm1197925741-342186618?utm_source=pixabay&utm_medium=affiliate&utm_campaign=sponsored_image&utm_content=srp_grid_media&utm_term=little+frocks+girl " class="d-block w-100 frock" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://pixabay.com/images/download/x-476506_1920.jpg" class="d-block w-100 image-banner-third frock" alt="...">
+            </div>
+        </div>
+    </div>
+    https://edenrobe.com/cdn/shop/files/0N9A6771_EGTF24S-200095.webp?v=1753094666&width=770
