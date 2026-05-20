@@ -96,6 +96,28 @@ body {
     font-weight: bold;
     border-top: 2px solid #ffc0cb;
 }
+.title{
+    text-align: center;
+    margin: 40px 0;
+    font-size: 36px;
+    color: #000000;
+}
+.card{
+    background-color: rgba(250, 143, 209, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    gap: 20px;
+}
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
 
 /* Responsive Design */
 
