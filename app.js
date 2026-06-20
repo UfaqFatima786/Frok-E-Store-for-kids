@@ -1,7 +1,8 @@
 let products = document.getElementById("products");
-
+fetch("https://fakestoreapi.com/products/category/women's%20clothing")
+fetch("https://fakestoreapi.com/products")
 fetch("https://dummyjson.com/products")
-// fetch("https://fakestoreapi.com/products")
+fetch("https://fakestoreapi.com/products/category/women's%20clothing")
 
 .then((res) => {
 
@@ -58,3 +59,4 @@ fetch("https://dummyjson.com/products")
 
     `;
 });
+
