@@ -35,13 +35,13 @@ fetch("https://dummyjson.com/products")
 
         products.innerHTML += `
 
-        <div class="card">
+        <div class="cardhtml">
 
             <img src="${item.thumbnail}" alt="" class="product-image">
 
-            <h3>${item.title}</h3>
+            <h3 class="product-title">${item.title}</h3>
 
-            <p>
+            <p class=description>
               ${item.description.substring(0, 80)}...
             </p>
 
