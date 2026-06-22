@@ -2,39 +2,37 @@ let products = document.getElementById("products");
 // fetch("https://fakestoreapi.com/products/category/women's%20clothing")
 // fetch("https://fakestoreapi.com/products")
 fetch("https://dummyjson.com/products")
-// fetch("https://fakestoreapi.com/products/category/women's%20clothing")
+  // fetch("https://fakestoreapi.com/products/category/women's%20clothing")
 
-// .then((res) => {
+  // .then((res) => {
 
-//     return res.json();
+  //     return res.json();
 
-// })
+  // })
 
-// fetch("https://fakestoreapi.com/products")
-//   .then(res => {
+  // fetch("https://fakestoreapi.com/products")
+  //   .then(res => {
 
-//     return res.json();
+  //     return res.json();
 
-// })
-
-
+  // })
 
 
-// .then((data) => {
 
-//     console.log(data);
 
-//     data.products.map((item) => 
-      
-.then((res) => res.json())
+  // .then((data) => {
+
+  //     console.log(data);
+
+  //     data.products.map((item) => 
+
+  .then((res) => res.json())
   .then((data) => {
 
-    data.products.map((item) =>
+    data.products.map((item) => {
 
-      {
-
-        products.innerHTML += `
-
+      products.innerHTML += `
+    <div class="col">
         <div class="cardhtml">
 
             <img src="${item.thumbnail}" alt="" class="product-image">
@@ -49,16 +47,17 @@ fetch("https://dummyjson.com/products")
               $${item.price}
             </div>
 
-            <button>Add To Cart</button>
+            <button class="buttoncart">Add To Cart</button>
 
         </div>
+    </div>
 
         `;
     });
 
-})
+  })
 
-.catch((error) => {
+  .catch((error) => {
 
     console.log("API Error:", error);
 
@@ -69,7 +68,7 @@ fetch("https://dummyjson.com/products")
       </h1>
 
     `;
-});
+  });
 
 
 
