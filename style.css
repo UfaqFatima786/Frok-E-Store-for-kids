@@ -18,15 +18,22 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    /* position: absolute; */
+    border-radius: 50%;
     right: 100px;
 }
-.navbar{
-    background-color: #530101;
+.navbar {
+    background: linear-gradient(135deg, #fdc8d0, #ce4c61, #640101);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .title {
-    /* text-align: center; */
-    /* margin: 40px 0; */
     font-size: 60px;
     font-weight: bold;
     color: #d30303;
@@ -35,7 +42,6 @@ body {
 
 .title:hover {
     text-align: center;
-    /* margin: 40px 0; */
     font-size: 40px;
     font-weight: bold;
     color: #584848;
@@ -280,7 +286,7 @@ body {
     border-radius: 10px;
 }
 .description {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     color: #000000;
 }
@@ -314,11 +320,6 @@ font-weight: 600;
 .buttoncart:active {
     transform: translateY(0);
 }
-
-
-
-/* Responsive Design */
-
 @media(max-width: 768px) {
 
     .footer-container {
@@ -335,9 +336,6 @@ font-weight: 600;
     }
 
 }
-
-/* ========== CONTACT PAGE STYLES ========== */
-
 .contact-container {
     min-height: calc(100vh - 300px);
     padding: 60px 20px 40px;
@@ -469,8 +467,6 @@ font-weight: 600;
     transform: translateY(0);
 }
 
-/* ========== CONTACT INFO STYLES ========== */
-
 .contact-info-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -530,8 +526,6 @@ font-weight: 600;
     color: #ffcccc;
     font-weight: 600;
 }
-
-/* ========== RESPONSIVE DESIGN FOR CONTACT PAGE ========== */
 
 @media (max-width: 768px) {
     .contact-content {
