@@ -39,9 +39,9 @@ fetch("https://dummyjson.com/products")
 
             <img src="${item.thumbnail}" alt="" class="product-image">
 
-            <h3 class="product-title">${item.title}</h3>
+            <h3 class="product-title mt-3">${item.title}</h3>
 
-            <p class=description>
+            <p class="description">
               ${item.description.substring(0, 80)}...
             </p>
 
